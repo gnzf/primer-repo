@@ -1,0 +1,186 @@
+#titulo {
+    color:green;            /* # PARA USAR ESTILO CON (ID)*/
+}
+
+p.especial {
+    color: mediumaquamarine;    
+}
+                                /* CON EL (.) SEGUIDO DE QUE ETIQUETA EN ESPECIAL QUEREMOS USAR*/
+p.texto {
+    color: slateblue;
+}
+
+div p {
+    color: aquamarine;                  /* PARA USAR LA PROPIEDAD EN TODAS LAS P DENTRO DE DIV*/
+}
+
+div h2, div h3 {
+    color:brown;                        /* PARA USAR LA PROPIEDAD EN TODOS LOS H2 Y H3 DENTRO DE DIV*/
+}
+
+* {
+    font-size: 24px;
+    /* color: black; */
+}
+
+/* Esto es un comentario */
+
+/*
+.color {
+    color: #ff0000;
+}
+.color {
+    color: rgb(0 ,255 ,255);
+}
+*/
+.color {
+   /*  border: 5px black dotted; */
+    /*
+        dotted
+        dashed
+        solid 
+        double
+        groove -> colores tridimensionales
+        ridge -> colores tridimensionales
+        inset -> colores tridimensionales
+        outset -> colores tridimensionales
+        none
+        hidden
+    */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+}
+
+#fondo {
+      background-color: rgba(255,0,0);
+    /*opacity: 0.3; */
+    height: 200px;
+  /*   background-image: url("./13645341_997987743657835_8870975640599607973_n.jpg"); */
+    /* background-repeat: repeat-y;
+    background-position: center top; */
+    background: #f00 url("./13645341_997987743657835_8870975640599607973_n.jpg") repeat-y center bottom / 100px 100px;
+    /* background-size: 100px 100px; */
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 5px black;                /* BOX MODEL */
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 3px solid red;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+a:link{
+    color: blueviolet;          /* 1 */
+}
+
+a:visited {
+    color: grey;                /* 2 */ 
+}   
+                                              /* EL ORDEN ES IMPORTANTE PARA UTILIZAR ESTAS 4 PROPIEDADES*/
+a:hover {
+    color: yellow;              /* 3 */
+}
+
+a:active {
+    color: red;                 /* 4 */
+}
+
+ul {
+    background-color: cyan;
+     list-style-type: georgian;
+   /*  padding-left: 0; */
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td {
+    border: solid 1px #f00;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;   
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;     /* solo marca los impares(even) */
+}
+
+tr:hover {
+    background-color: #aaa;     /* se utiliza para resaltar la columna donde se para el cursor */
+    cursor: pointer;
+}
+
+span {
+    display:block;
+    /* display: none; */
+   /*  visibility: hidden; */
+   max-width: 300px;
+   background-color: red;
+
+}
+
+.inline {
+    display: inline;                        /* Display: block; mantiene los objetos en todo el bloque */
+}                                           /* Display: inline; mantiene los objetos en linea */
+
+#position {
+    position: sticky;
+    /* position: fixed; */              /* position: fixed; se usa para dejar fijo un elemento en la pagina */
+    left: 20px;
+    top: 25px;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.column {
+    border: solid 0 #ddd;
+    margin: 0;                              /* columnas */
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 55px;                               /* inline-block permite ponerle modificar el height y width */
+    background-color: red;                    /* inline solo no deja modificar medidas toma la medida del texto */
+}
+
+.center {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;                           /* como centrar un elemento */
+    margin: 0 auto;
+    background-color: aqua;
+}
